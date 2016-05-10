@@ -243,13 +243,13 @@ module commonmodule {
 	};
 	//@top-level false
 
-	const unsigned long MaxLengthForecastScheduleIrregularTimePoints = 100;
-	typedef sequence<IrregularTimePoint, MaxLengthForecastScheduleIrregularTimePoints> SequenceOfForecastScheduleIrregularTimePoints;
+	const unsigned long MaxLengthForecastScheduleIrregularTimePoint = 100;
+	typedef sequence<IrregularTimePoint, MaxLengthForecastScheduleIrregularTimePoint> SequenceOfForecastScheduleIrregularTimePoint;
 
 	struct ForecastSchedule : BasicIntervalSchedule {
 		string version;   
 		DateTimeType versionDateTime;   
-		SequenceOfForecastScheduleIrregularTimePoints irregularTimePoints;
+		SequenceOfForecastScheduleIrregularTimePoint irregularTimePoint;
 	};
 	//@top-level false
 
